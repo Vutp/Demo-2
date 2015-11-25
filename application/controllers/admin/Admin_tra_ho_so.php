@@ -51,8 +51,6 @@ class Admin_tra_ho_so extends CI_Controller {
 	public function edit_stt($id=3){
 
 		$ngay_tra = date("d/m/Y");
-
-		$this->load->model('Ho_so');
 		$this->db->where('id', $id);
 		$this->db->update('ho_so',  array(
 			'status' => 5,
@@ -65,7 +63,6 @@ class Admin_tra_ho_so extends CI_Controller {
 	public function edit_stt_error($id=3){
 
 		$ngay_tra = date("d/m/Y");
-		$this->load->model('Ho_so');
 		$this->db->where('id', $id);
 		$this->db->update('ho_so',  array(
 			'status' => 8,

@@ -6,6 +6,7 @@ class Map extends CI_Model {
 	public $p_id;
 	public $note;
     public function format($input){
+        if ($input=="")return;
         $test=explode('/', $input);
         return $test;
     }

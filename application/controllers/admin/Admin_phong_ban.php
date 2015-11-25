@@ -24,7 +24,6 @@ class Admin_phong_ban extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 	public function edit($id=3){
-	$this->load->model('Ho_so');
 	$this->db->where('id', $id);
 	$this->db->update('ho_so',  array(
                'status' => 2
@@ -35,22 +34,22 @@ class Admin_phong_ban extends CI_Controller {
 
 	public function notifyError($id=3){
 
-		$id = $this->input->post('node_id');
-		$this->db->where('id', $id);
+		//$id = $this->input->post('node_id');
+		
 		$val= $this->input->post('ten_rieng_0').'+'.$this->input->post('loi_rieng_0').'+';
 		for ($i = 2;$i<$this->input->post('count')-1;$i++ ) {
 			$val=$val.''.$this->input->post('ten_rieng_'.$i.'').'+'.$this->input->post('loi_rieng_'.$i.'').'+';
 			$i++;
 			}
 		$val=$val.'-'.$this->input->post('error');	
+		$this->db->where('id', $id);
 		$this->db->update('ho_so',array(
-			'error'=>$val
-			,'status'=>6
+			'error'=>$val,
+			'status'=>6
 		));
 		redirect(base_url('admin/admin_phong_ban'));
 	}
 	public function edit_stt($id=3){
-	$this->load->model('Ho_so');
 	$this->db->where('id', $id);
 	$this->db->update('ho_so',  array(
                'status' => 3

@@ -214,14 +214,11 @@
                             'name'=>'Sdt','type'=>"text" ,
                             'size'  => '38','placeholder'=>"Nhập số điện thoại   mới");
                         ?>
-
                         <tr>
                             <td>Nhập số điện thoại mới</td>
                             <td><?php echo
-                                form_input($data1);?></td>
-
+                               form_input($data1);?></td>
                         </tr>
-
                         <tr>
                             <td></td>
                             <td><?php echo
