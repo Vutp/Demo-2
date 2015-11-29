@@ -121,12 +121,7 @@
         function compileUserInputs(){
             var theString = document.getElementById("ma_Ho_So").value;
             var soNgay =parseInt(document.getElementById("songay").value);
-            if(soNgay < 10){
-                value = "0"+soNgay;
-            }else{
-                value = soNgay;
-            }
-            theString = theString.substr(0,19)+value;
+            theString = theString.substr(0,19)+soNgay;
             document.getElementById("ma_Ho_So").value = theString;
             //OK
         }

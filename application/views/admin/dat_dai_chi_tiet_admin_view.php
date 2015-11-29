@@ -94,7 +94,7 @@
                                 <label>Số ngày giải quyết </label>
                             </div>
                             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                                <input class="form-control" id="songay" onBlur="doMacBookPro();" type="lable" name="songay" >
+                                <input class="form-control" id="songay" type="number" min="0" onBlur="doMacBookPro();" type="lable" name="songay" >
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                 <div class="error"><span class="error">* <?php echo form_error('songay'); ?></span></div>

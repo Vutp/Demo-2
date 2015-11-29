@@ -309,7 +309,7 @@ class Thong_ke extends CI_Controller
 
         $week_number = (int)$tuanDaChon;
         $year = (int)($yearInWeek);
-        $myDateArray = [];
+        $myDateArray = "";
 
         for ($day = 1; $day <= 7; $day++) {
             array_push($myDateArray, date('dmy', strtotime($year . "W" . $week_number . $day)));

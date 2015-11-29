@@ -34,7 +34,7 @@ $( document ).ready(function() {
         string_1 = "TP";
     }else {
         string_1 = "DD";
-        so_ngay = 0;
+        so_ngay = "";
     }
     var myDayVar = so_ngay;
 
@@ -51,12 +51,9 @@ $( document ).ready(function() {
         }
     }
     var theString = today_1 + "-" + today_2 + "-" + string_1 + theLifeOfYing + "-" ;
-    var addCode = 2015;
-    if( myDayVar == 0){
-        addCode = "00";
-    }else{
+    
         addCode = document.getElementById("songay").value;
-    }
+    
     theString = theString + addCode;
     document.getElementById("ma_Ho_So").value = theString;
     //OK
@@ -186,12 +183,9 @@ function doMacBookPro(){
         }
     }
     var theString = today_1+ "-" + today_2+ "-" + string_1 + theLifeOfYing + "-" ;
-    var addCode = 2015;
-    if( myDayVar == 0){
-        addCode = "00";
-    }else{
+    
         addCode = document.getElementById('songay').value;
-    }
+    
     theString = theString + addCode;
     document.getElementById("ma_Ho_So").value = theString;
 
