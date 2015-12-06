@@ -459,6 +459,21 @@ body {
     border-top-color: #fff;
 }
 
+/* Chat-date */
+.dw {
+    text-align: center;
+    border-bottom: 1px solid #E8E8E8;
+    color: #BDC1C9;
+    font-size: 11px;
+}
+.dt {
+    background-color: #FFF;
+    padding: 0px 5px;
+    position: relative;
+    top: 9px;
+}
+
+
 /* Custom CSS */
 .brand {
     padding-top: 10px;
@@ -608,7 +623,7 @@ Moi them
 /**
  * Tab Nav
  */
-.tabs {
+ .tabs {
     font-size: 13px; line-height: 20px;
     /*margin-top: 6%;*/
 }
@@ -671,16 +686,6 @@ Moi them
     }
 
 }
-/*
-.ui-datepicker .ui-datepicker-next {
-    background: url("../img/nextArr.png") no-repeat scroll -2px center transparent;
-}
-
-.ui-datepicker .ui-datepicker-pre {
-    background: url("../img/prevArr.png") no-repeat scroll -18px -2px transparent;
-    right: 2px;
-}*/
-
 
 
 /*End*/
