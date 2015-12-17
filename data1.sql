@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 16, 2015 at 08:47 PM
+-- Generation Time: Dec 17, 2015 at 04:02 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `data2`
+-- Database: `data1`
 --
 
 -- --------------------------------------------------------
@@ -184,14 +184,15 @@ CREATE TABLE IF NOT EXISTS `gcm_user` (
   `cmnd` int(11) NOT NULL,
   `gcmregid` varchar(200) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `gcm_user`
 --
 
 INSERT INTO `gcm_user` (`id`, `cmnd`, `gcmregid`) VALUES
-(1, 222222222, 'APA91bGt6TUjgsTmCmk2iGA1Mg_441MyNrKtK9GKa0SSHSBTqSNQImxTAKUuckMdWWdB3v2s7Zcgh0FdHjSMo_QKPD3t06qXsokmCojNzYEaZdef6L2HiP2hLl8Jk1c8pRQIoDti97e2Y-QX1ZEZq4gv21AKD-tCKQ');
+(2, 999999999, 'APA91bHRA1aiHZ_Kowb3zh_5cAIoifNHw1_QQ8DnvP4CfZOk-mXavmteBbLGEMdqebQBxt6_qRpVKjdjQnrweN1QnBZP7yc55MA2ki6tO1JNz5-NtrZAXSXbf3HT6rvpCyLfOBI2e9I-'),
+(3, 999999998, 'APA91bGu94QI_q0pzbHARioHrU8E9OnWdaJr75YuNvjfNobfVFNcOEVr7UfXZoOU3Ta7fmmyaUMU0eQv0FPgpR03soKXdySwcW-7Llu4PubvBdeaXWB1FOB1Y1JBXxu85vVJf2i6QWT5');
 
 -- --------------------------------------------------------
 
@@ -267,7 +268,7 @@ CREATE TABLE IF NOT EXISTS `ho_so` (
   `error` text NOT NULL,
   `tien_thu` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `ho_so`
@@ -276,7 +277,10 @@ CREATE TABLE IF NOT EXISTS `ho_so` (
 INSERT INTO `ho_so` (`id`, `mshs`, `name`, `type`, `cmnd`, `status`, `mcb`, `lich_su_ho_so`, `num_error`, `ngay_tra`, `sdt`, `dia_chi`, `tt_giay_to_da_thu`, `note`, `error`, `tien_thu`) VALUES
 (1, '221658-151215-TP01-0', 'Hồ Sơ 1', 0, 123456789, 5, 'trave', '/tiepnhan/bantp/nhanvatra/bantp', 1, '15/12/2015', '1234567890', 'Ktx', ' Bản chính.<br>+<b>1</b>+ Bản sao cần chứng thực.<br>+<b>1</b>+', '', ' Bản chính.++ Bản sao cần chứng thực.++-', 2000),
 (2, '223711-151215-TP02-1', 'Lê Bảo Minh', 0, 123456789, 8, 'trave', '/tiepnhan/bantp', 1, '15/12/2015', '1234567890', 'Ktx', ' Kết quả giám định sức khỏe của người viết di chúc.<br>+<b>1</b>+ Di chúc.<br>+<b>1</b>+ Phiếu yêu cầu chứng thực (theo mẫu).<br>+<b>1</b>+ Xuất trình giấy tờ tuỳ thân (hộ khẩu chứng minh nhân dân) và giấy tờ cần thiết để chứng minh quyền sở hữu quyền sử dụng đối với tài sản.<br>+<b>1</b>+', '', ' Kết quả giám định sức khỏe của người viết di chúc.++ Di chúc.++ Phiếu yêu cầu chứng thực (theo mẫu).++ Xuất trình giấy tờ tuỳ thân (hộ khẩu chứng minh nhân dân) và giấy tờ cần thiết để chứng minh quyền sở hữu quyền sử dụng đối với tài sản.++-', 20000),
-(3, '224613-151215-TP01-0', 'Hồ Sơ 3', 0, 123456789, 2, 'bantp', '/tiepnhan/bantp/nhanvatra', 1, '15/12/2015', '1234567890', 'Ktx', ' Bản chính.<br>+<b>1</b>+ Bản sao cần chứng thực.<br>+<b>1</b>+', '', ' Bản chính.++ Bản sao cần chứng thực.++-', 2000);
+(3, '224613-151215-TP01-0', 'Hồ Sơ 3', 0, 123456789, 2, 'bantp', '/tiepnhan/bantp/nhanvatra', 1, '15/12/2015', '1234567890', 'Ktx', ' Bản chính.<br>+<b>1</b>+ Bản sao cần chứng thực.<br>+<b>1</b>+', '', ' Bản chính.++ Bản sao cần chứng thực.++-', 2000),
+(4, '031911-171215-TP17-5', 'Cảnh phong', 0, 999999999, 1, 'nhanvatra', '/nhanvatra', 0, '', '0989777676', '', ' Giấy cử giám hộ.<br>+<b>1</b>+ Tờ khai (theo mẫu quy định).<br>+<b>1</b>+ Bản sao giấy chứng minh nhân dân hoặc Hộ chiếu của người đi đăng ký hộ tịch để xác định về cá nhân người đó.<br>+<b>1</b>+ Bản sao Sổ hộ khẩu Sổ đăng ký tạm trú (đối với công dân Việt Nam ở trong nước); Thẻ thường trú Thẻ tạm trú hoặc Chứng nhận tạm trú (đối với người nước ngoài cư trú tại Việt Nam) để làm căn cứ xác định thẩm quyền đăng ký.<br>+<b>1</b>+ Bản sao các giấy tờ nêu trên kèm bản chính để đối chiếu hoặc bản sao có chứng thực.<br>+<b>1</b>+', '', '', 5000),
+(5, '031950-171215-TP02-1', 'Văn Biên', 0, 999999998, 2, 'bantp', '/nhanvatra', 0, '', '0989777676', '', ' Kết quả giám định sức khỏe của người viết di chúc.<br>+<b>1</b>+ Di chúc.<br>+<b>1</b>+ Phiếu yêu cầu chứng thực (theo mẫu).<br>+<b>1</b>+ Xuất trình giấy tờ tuỳ thân (hộ khẩu chứng minh nhân dân) và giấy tờ cần thiết để chứng minh quyền sở hữu quyền sử dụng đối với tài sản.<br>+<b>1</b>+', '', '', 20000),
+(6, '095752-171215-TP05-0', 'Vĩnh phúc', 0, 234566543, 0, 'nhanvatra', '', 0, '', '0989777676', '', ' Tờ khai (theo mẫu).<br>+<b>1</b>+ Giấy chứng sinh (bản chính).<br>+<b>1</b>+ Xuất trình giấy chứng nhận kết hôn (nếu có).<br>+<b>1</b>+ Bản sao giấy chứng minh nhân dân hoặc Hộ chiếu của người đi đăng ký hộ tịch để xác định về cá nhân người đó.<br>+<b>1</b>+ Bản sao Sổ hộ khẩu Sổ đăng ký tạm trú (đối với công dân Việt Nam ở trong nước); Thẻ thường trú Thẻ tạm trú hoặc Chứng nhận tạm trú (đối với người nước ngoài cư trú tại Việt Nam) để làm căn cứ xác định thẩm quyền đăng ký.<br>Bản sao các giấy tờ nêu trên kèm bản chính để đối chiếu hoặc bản sao có chứng thực.<br>+<b>1</b>+', '', '', 0);
 
 -- --------------------------------------------------------
 
